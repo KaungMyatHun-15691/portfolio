@@ -1,0 +1,384 @@
+html{
+    transition: 0.8s!important;
+}
+html[data-theme="light"]{
+    --dh-bg-white:var(--pdf-slate-50);
+    --dh-text-dark:var(--pdf-zinc-900);
+}
+html[data-theme="dark"]{
+    --dh-bg-dark:var(--pdf-zinc-900);
+    --dh-text-dark:var(--pdf-slate-400);
+}
+.span-rotate{
+    transform: rotate(315deg);
+    margin-left: -70px;
+    margin-bottom: 70px;
+}
+body{
+    background-color: var(--dh-bg-dark);
+    color: var(--dh-text-dark);
+}
+.navbar a{
+    color: var(--dh-text-dark)!important;
+}
+.dark-text{
+    color: var(--dh-text-dark) !important;
+}
+.font-xxl{
+    line-height: 4rem;
+    font-size: 55px;
+}
+.font-xl{
+    font-size: 45px;
+}
+.font-l{
+    font-size: 25px;
+}
+.h4-span{
+    font-size: 18px;
+    margin-top: 100px;
+}
+.mt-70{
+    margin-top: 70px;
+}
+.more-about-me{
+    margin-left: 250px;
+}
+.text-scroll-down{
+    font-size: 12px;
+}
+.hr-1{
+    transform: rotate(90deg);
+    width: 50px;
+    margin-bottom: 75px;
+}
+
+.hr-2{
+    transform: rotate(90deg);
+    width: 100px;
+    margin-bottom: 150px;
+}
+.hr-3{
+    transform: rotate(90deg);
+    width: 150px;
+    margin-bottom: 100px;
+}
+.hr-small{
+    width: 40px;
+}
+.scroll-down{
+    margin-top: 80px;
+    writing-mode: vertical-rl;
+}
+.rounded-5{
+    border-radius: 15px;
+}
+.rotate-img{
+    transform: rotate(347deg);
+}
+img{
+    transition: 0.6s;
+    box-shadow: rgba(0, 0, 0, 0.267) 1px 5px 5px, rgba(220, 20, 60, 0.288) 1px 5px 5px, rgba(0, 255, 0, 0.24) 1px 5px 5px;
+}
+img:hover{
+    transform: scale(1.2);
+}
+.btn-portfolio:hover{
+    text-decoration: underline;
+}
+.skill-text{
+    margin-left: 20px;
+    margin-top: -60px;
+}
+.mt-15{
+    margin-top: 150px;
+}
+.footer{
+    height: 50px;
+}
+.icon-skill{
+    width: 60px;
+    height: 60px;
+}
+.navbar-control{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+}
+.footer-fixed{
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+}
+.footer-fixed.show{
+    display: block !important;
+}
+/*Menu Icon*/
+.menu-icon {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border: none;
+    box-shadow: none;
+}
+.menu-icon span{
+    width: 30px;
+    height: 4px;
+    background-color: var(--dh-text-dark);
+    position: absolute;
+    border-radius: 25px;
+    transition: 0.5s;
+}
+.menu-icon span:nth-child(1){
+    transform: translateY(-10px);
+    width: 20px;
+    left: 0px;
+}
+.menu-icon span:nth-child(2){
+    transform: translateY(10px);
+    width: 20px;
+    left: 0px;
+}
+.menu-icon.show span:nth-child(3){
+    transform: translateX(-60px);
+    opacity: 0;
+}
+.menu-icon.show span:nth-child(1){
+    transform: translateY(0) rotate(45deg);
+    width: 33px;
+    transition: 0.125s;
+}
+.menu-icon.show span:nth-child(2){
+    transform: translateY(0) rotate(315deg);
+    width: 33px;
+    transition: 0.25s;
+}
+.o-n:focus{
+    box-shadow: none;
+}
+
+/*Loader*/
+.loading{
+    width: 100%;
+    height: 100%;
+    background: var(--dh-bg-dark);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+.lds-roller {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+}
+.lds-roller div {
+    animation: lds-roller 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    transform-origin: 40px 40px;
+}
+.lds-roller div:after {
+    content: " ";
+    display: block;
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: var(--dh-text-dark);
+    margin: -4px 0 0 -4px;
+}
+.lds-roller div:nth-child(1) {
+    animation-delay: -0.036s;
+}
+.lds-roller div:nth-child(1):after {
+    top: 63px;
+    left: 63px;
+}
+.lds-roller div:nth-child(2) {
+    animation-delay: -0.072s;
+}
+.lds-roller div:nth-child(2):after {
+    top: 68px;
+    left: 56px;
+}
+.lds-roller div:nth-child(3) {
+    animation-delay: -0.108s;
+}
+.lds-roller div:nth-child(3):after {
+    top: 71px;
+    left: 48px;
+}
+.lds-roller div:nth-child(4) {
+    animation-delay: -0.144s;
+}
+.lds-roller div:nth-child(4):after {
+    top: 72px;
+    left: 40px;
+}
+.lds-roller div:nth-child(5) {
+    animation-delay: -0.18s;
+}
+.lds-roller div:nth-child(5):after {
+    top: 71px;
+    left: 32px;
+}
+.lds-roller div:nth-child(6) {
+    animation-delay: -0.216s;
+}
+.lds-roller div:nth-child(6):after {
+    top: 68px;
+    left: 24px;
+}
+.lds-roller div:nth-child(7) {
+    animation-delay: -0.252s;
+}
+.lds-roller div:nth-child(7):after {
+    top: 63px;
+    left: 17px;
+}
+.lds-roller div:nth-child(8) {
+    animation-delay: -0.288s;
+}
+.lds-roller div:nth-child(8):after {
+    top: 56px;
+    left: 12px;
+}
+@keyframes lds-roller {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@media screen and (max-width: 400px){
+    .span-rotate{
+        transform: rotate(0deg);
+        margin-left: 0;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+    .mt-70{
+        margin-top: 10px;
+    }
+    .font-l{
+        font-size: 10px;
+    }
+    .fa-2x{
+        font-size: 1.5rem;
+    }
+    .more-about-me{
+        margin-left: 100px;
+    }
+    .scroll-down{
+        writing-mode: horizontal-tb;
+    }
+    .display-scroll{
+        display: none;
+    }
+    .h4-span{
+        font-size: 10px;
+        margin-top: 50px;
+    }
+    .font-xxl{
+        font-size: 30px;
+        font-weight: bold;
+    }
+    .icon-skill{
+        width: 50px;
+        height: 50px;
+    }
+    .fa-5x{
+        font-size: 50px;
+    }
+    .mt-15{
+        margin-top: 30px;
+    }
+    .btn-testimonial{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .row{
+        max-width: 97% !important;
+    }
+    .call-me-btn{
+        width: 55px; 
+        height: 55px;
+    }
+}
+
+
+@media screen and (max-width: 900px) {
+    .span-rotate{
+        transform: rotate(0deg);
+        margin-left: 0;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+    .mt-70{
+        margin-top: 30px;
+    }
+    .font-l{
+        font-size: 15px;
+    }
+    .fa-2x{
+        font-size: 1.8rem;
+    }
+    .more-about-me{
+        margin-left: 100px;
+    }
+    .scroll-down{
+        writing-mode: horizontal-tb;
+    }
+    .display-scroll{
+        display: none;
+    }
+    .h4-span{
+        font-size: 15px;
+        margin-top: 70px;
+    }
+    .font-xxl{
+        font-size: 40px;
+        font-weight: bold;
+    }
+    .icon-skill{
+        width: 60px;
+        height: 60px;
+    }
+    .fa-5x{
+        font-size: 60px;
+    }
+    .mt-15{
+        margin-top: 60px;
+    }
+    .btn-testimonial{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .row{
+        max-width: 97% !important;
+    }
+    .icon-pill{
+        width: 50px;
+        height: 90px;
+    }
+    .call-me-btn{
+        width: 55px; 
+        height: 55px;
+    }
+}
